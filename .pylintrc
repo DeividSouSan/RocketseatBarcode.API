@@ -4,6 +4,7 @@ disable=
       C0115, # missing-class-docsctring
       C0116, # missing-function-docsctring
       W0703, # catching general exception Exception
+      W0719, # catching too broad  exception Exception
       R0903, # too-few-public-methods
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
