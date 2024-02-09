@@ -1,8 +1,9 @@
+from src.controllers.create_tag_controller import CreateTagController
 from src.views.http_types.http_request import HttpRequest
 from src.views.http_types.http_response import HttpResponse
 
 
-class TagCreatorView:
+class CreateTagView:
     """
     This class allows interaction with HTTP.
     """
@@ -11,7 +12,7 @@ class TagCreatorView:
         body = http_request.body
         product_code = body["product_code"]
 
-        # Validação
+        barcode = CreateTagController()
+        response = barcode.create(product_code)
 
-        # Retorno
-        return HttpResponse({"product_code": product_code}, 200)
+        return HttpResponse(response, 200)
