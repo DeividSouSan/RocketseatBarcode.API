@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.gitignore": true,
+        "**/.pre-commit-config.yaml": true,
+        "**/.pylintrc": true,
+        "**/requirements.txt": true,
+        "**/__init__.py": true,
+    }
+}
+
+// Os arquivos ainda existem só não são visíveis pelo vscode, se precisar modificalos faça pelo terminal ou remova as suas respectivas linhas
