@@ -3,7 +3,7 @@
         "**/__pycache__": true,
         "**/.gitignore": true,
         "**/.pre-commit-config.yaml": true,
-        "**/.pylintrc": true,
+        "**/.pylintrc": false,
         "**/requirements.txt": true,
         "**/__init__.py": true,
     }
