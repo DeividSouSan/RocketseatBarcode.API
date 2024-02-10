@@ -12,7 +12,7 @@ class CreateTagView:
         body = http_request.body
         product_code = body["product_code"]
 
-        barcode = CreateTagController()
-        response = barcode.create(product_code)
+        tag_controller = CreateTagController()
+        response = tag_controller.create(product_code)
 
         return HttpResponse(response, 200)
