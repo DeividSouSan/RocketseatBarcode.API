@@ -6,7 +6,7 @@ class CreateTagController:
     Implements business rules.
     """
 
-    def create(self, product_code: str) -> dict:
+    def create(self, product_code: str) -> dict[str, any]:
         path = self.__create_tag(product_code)
         response = self.__format_response(path)
         return response
